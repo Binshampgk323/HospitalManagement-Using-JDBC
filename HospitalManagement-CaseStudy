@@ -1,0 +1,406 @@
+# HospitalManagement-Using-JDBC
+
+
+
+HOSPITAL MANAGEMENT SYSTEM
+
+
+ 
+
+Step 1. The program should display the menu as follows
+1 : Admin
+2 : Opstaff
+3: Exit
+Admin:
+Step 2. If 1 is pressed, get the admin login details and validate. On valid login, show  the below menu.
+
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+
+Step 3. If 1 is pressed, get the emergency details, show the below menu.
+1)Add(doctor) // (Fields:id,name,department,start time,end time,fee)
+2)Delete(doctor) // (Fields:id)
+3)Update(doctor) // (Fields:id,start time,end time,fee)
+4)Display // (Field:id,name,department,start time,end time,fee)
+5)Exit  // (Should display menu on step 2)
+	3.1 Add doctor details into table.
+	3.2 Remove the details of  doctor with given id.
+	3.3 Update field time and fee with given id.
+	3.4 display all details of the doctor.
+	3.5 go back to previous menu .
+Step 4. If 2 press get OP details and show the menu given below
+1)Add(doctor) // (Fields:id,name,department,start time,end time,fee)
+2)Delete(doctor) // (Fields:id)
+3)Update(doctor) // (Fields:id,start time,end time,fee)
+4)Display // (Field:id,name,department,start time,end time,fee)
+5)Exit  // (Should display menu on step 2)
+	4.1 Add doctor details into table.
+	4.2 Remove the details of  doctor with given id.
+	4.3 Update field time and fee with given id.
+	4.4 display all details of the doctor.
+	4.5 go back to previous menu .
+Step 5. Logout Should display the menu on Step 1. Note: Until logout, the menu on step 2 should be repeated.
+OP Staff
+Step 6.  If 2 is pressed, get the opstaff login details and validate. On valid login, show  the below menu.
+
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+
+Step 7. If 1 is pressed, get the emergency details, show the below menu.
+1 :Available doctor// (Field:id,name,age,gender,address)
+2 : Add Patient // (Field:id,name,age,gender,address)
+3 : Exit
+  7.1  Display the available doctors details
+  7.2  Add patient details and print the bill also.
+  7.3 go back to previous section(step 6)
+Step 8. If 2 is pressed,get the OP details,show the below menu. 
+1 :Available doctor// (Field:id,name,age,gender,address)
+2 : Add Patient // (Field:id,name,age,gender,address)
+3 : Exit
+    8.1  Display the available doctors details
+    8.2  Add patient details and print the bill also.
+8.2.1 Ask department of doctor,then print available doctor name , time and fee.
+8.2.2 Ask which doctor you want.
+8.2.3 print patient id ,name,doctor name,fee; including fee of opticket also.
+ 8.3 go back to previous section(step 6)
+
+Instruction:
+1.	Predefined list of Admin and OP staff( at least 2 users in Admin and 2 in OPstaff) with min field(username,password).
+2.	Accessing the details using database is preffered .
+3.	The given fields on the questions are the mandatory fields. You are allowed to add additional tables or fields based on your design to meet the above said functionality.
+
+Output
+1 : Admin
+2 : Opstaff
+3 : Exit
+Enter your option
+1
+Username
+admin
+Password
+admin123@
+Admin page
+
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+
+//admin
+
+Enter your choice
+1
+
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+4
+******Details***********
+Doctor id ->1
+Doctor Name ->arun
+Department ->ortho
+Duty time ->9Am to 5Pm
+Fee ->200
+-------------------
+******Details***********
+Doctor id ->2
+Doctor Name ->anil
+Department ->ortho
+Duty time ->9AM to 8PM
+Fee ->200
+-------------------
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+1
+Enter id of the doctor
+3
+Enter name of the doctor
+maya
+Enter department
+ortho
+Duty Starting time
+9AM
+Duty ending time
+5PM
+Enter fee
+200
+Details added
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+2
+*********Details*******
+Doctor id -> 1
+Doctor Name -> arun
+-----------------------
+*********Details*******
+Doctor id -> 2
+Doctor Name -> anil
+-----------------------
+*********Details*******
+Doctor id -> 3
+Doctor Name -> maya
+-----------------------
+Enter doctor id
+2
+Details Removed
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+3
+Enter doctor id
+1
+No of field want to change
+1
+1)Staring time
+2)Ending time
+3)Fee
+Which you want to change
+3
+Enter fee
+250
+Details updated
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+5
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+Enter your choice
+2
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+4
+******Details***********
+Doctor id ->2
+Doctor Name ->suray
+Department ->nuero
+Duty time ->10am to 8pm
+Fee ->100
+-------------------
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+1
+Enter id of the doctor
+1
+Enter name of the doctor
+jeeva
+Enter department
+nuero
+Duty Starting time
+5PM
+Duty ending time
+6AM
+Enter fee
+250
+Details added
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+2
+*********Details*******
+Doctor id -> 1
+Doctor Name -> jeeva
+-----------------------
+*********Details*******
+Doctor id -> 2
+Doctor Name -> suray
+-----------------------
+Enter doctor id
+2
+Details Removed
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+3
+Enter doctor id
+1
+No of field want to change
+2
+1)Staring time
+2)Ending time
+3)Fee
+Which you want to change
+1
+2
+Duty Starting time
+9AM
+Duty ending time
+9PM
+Details updated
+1)Add(doctor)
+2)Delete(doctor)
+3)Update(doctor)
+4)Display
+5)Exit
+5
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+Enter your choice
+3
+Admin logout
+
+// OP Staff
+
+1 : Admin
+2 : Opstaff
+3 : Exit
+Enter your option
+2
+Username
+opstaff
+Password
+opstaff123@
+OP Staff Page
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+Enter your choice
+1
+1 : Available doctors
+2 : Add Patient
+3 : Exit
+1
+******Details***********
+Doctor id ->1
+Doctor Name ->arun
+Department ->ortho
+Duty time ->8Am to 6PM
+Fee ->300
+-------------------
+******Details***********
+Doctor id ->3
+Doctor Name ->maya
+Department ->ortho
+Duty time ->9AM to 5PM
+Fee ->200
+-------------------
+1 : Available doctors
+2 : Add Patient
+3 : Exit
+2
+Enter patient id
+5
+Enter patient Name
+gopu
+Age
+56
+Gender
+m
+Address
+sdjf
+Details added
+Department
+ortho
+*****Details******
+Doctor Name ->arun
+Duty time ->8Am to 6PM
+Fee ->300
+-------------------
+*****Details******
+Doctor Name ->maya
+Duty time ->9AM to 5PM
+Fee ->200
+-------------------
+Which doctor do you want
+maya
+****************
+Id -> 5
+Name ->gopu
+Name of doctor ->maya
+Fee ->300
+-----------------------
+1 : Available doctors
+2 : Add Patient
+3 : Exit
+3
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+Enter your choice
+2
+1 : Available doctors
+2 : Add Patient
+3 : Exit
+1
+******Details***********
+Doctor id ->1
+Doctor Name ->jeeva
+Department ->nuero
+Duty time ->9AM to 9PM
+Fee ->250
+-------------------
+1 : Available doctors
+2 : Add Patient
+3 : Exit
+2
+Enter patient id
+2
+Enter patient Name
+jyothi
+Age
+45
+Gender
+f
+Address
+skdjf
+Details added
+Department
+nuero
+*****Details******
+Doctor Name ->jeeva
+Duty time ->9AM to 9PM
+Fee ->250
+-------------------
+Which doctor do you want
+jeeva
+****************
+Patient Id -> 2
+Patient Name ->jyothi
+Name of doctor ->jeeva
+Fee ->350
+-----------------------
+1 : Available doctors
+2 : Add Patient
+3 : Exit
+3
+1 : Emergency
+2 : Outpatient(OP)
+3 : Logout
+Enter your choice
+3
+Staff logout
+1 : Admin
+2 : Opstaff
+3 : Exit
+Enter your option
+3
+Thank you..
+
+
+
+
